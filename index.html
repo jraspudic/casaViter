@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Home</title>
+    <title class="lang" key="home">Home</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,37 +48,60 @@
             <div class="rd-navbar-main-outer">
               <div class="rd-navbar-main">
                 <div class="rd-navbar-nav-wrap">
+                  <div id="logoNevbar" class="rd-navbar-brand"><a class="brand logoNavbar" href="index.html"><img src="images/logoViter.png" alt="" width="188" height="19"/></a></div>
                   <ul class="list-inline list-inline-md rd-navbar-corporate-list-social">
                     <li><a class="icon fa fa-facebook" href="#"></a></li>
-                    <li><a class="icon fa fa-twitter" href="#"></a></li>
-                    <li><a class="icon fa fa-google-plus" href="#"></a></li>
                     <li><a class="icon fa fa-instagram" href="#"></a></li>
+
+                                  <li class="rd-nav-item zastava"  id="hr">
+                                              <a class="navbar-brand zastava" href="#">
+                                                  <div class="logo-image">
+                                                      <img src="images/hr.png" class="img-fluid">
+                                                  </div>
+                                              </a>
+                                   </li>
+
+                                   <li class="rd-nav-item zastava"  id="de">
+                                              <a class="navbar-brand zastava translate" href="#">
+                                                  <div class="logo-image">
+                                                      <img src="images/de.png" class="img-fluid de">
+                                                  </div>
+                                              </a>
+                                    </li>
+
+                                     <li class="rd-nav-item zastava"  id="en">
+                                              <a class="navbar-brand zastava translate" href="#">
+                                                  <div class="logo-image">
+                                                      <img src="images/en.png" class="img-fluid de">
+                                                  </div>
+                                              </a>
+                                      </li>
                   </ul>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="home" href="index.html">Home</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About Us</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="about" href="about.html">About Us</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="apartments.html">Apartments</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="apartments" href="apartments.html">Apartments</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="studioApartment1.html">Studio Apartment 1</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="studioApartment2.html">Studio Apartment 2</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="studioApartment3.html">Studio Apartment 3</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="loft.html">Loft</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="basementApartment.html">Basement Apartment</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="sa1" href="studioApartment1.html">Studio Apartment 1</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="sa2" href="studioApartment2.html">Studio Apartment 2</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="sa3" href="studioApartment3.html">Studio Apartment 3</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="loft" href="loft.html">Loft</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="basementApartment" href="basementApartment.html">Ground Floor Apartment</a></li>
                       </ul>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="gallery.html">Gallery</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="gallery" href="gallery.html">Gallery</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="zaostrog.html">Zaostrog</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="trips.html">Trips</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="trips" href="trips.html">Trips</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="contact" href="contact.html">Contact</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="whereAreWe.html">Where Are We</a>                     
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="whereAreWe" href="whereAreWe.html">Where Are We</a>                     
                     </li>
                   </ul>
                 </div>
@@ -95,8 +118,8 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-10 backgroundGray">
-                    <h5 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Sunny piece of paradise</h5>
-                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Welcome to</span><span class="font-weight-bold"> Zaostrog</span></h2><a class="button button-default-outline button-ujarak buttonBolder" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">About</a>
+                    <h5 class="text-uppercase lang" data-caption-animate="fadeInRight" data-caption-delay="0" key="spop">Sunny piece of paradise</h5>
+                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span class="lang" key="welcomeTo">Welcome to</span><span class="font-weight-bold"> Zaostrog</span></h2><a class="button button-default-outline button-ujarak buttonBolder lang" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0" key="about">About</a>
                   </div>
                 </div>
               </div>
@@ -107,8 +130,8 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-10 backgroundGray">
-                    <h5 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">in an untouched part of nature</h5>
-                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Casa Viter is</span><span class="font-weight-bold"> For You</span></h2><a class="button button-default-outline button-ujarak buttonBolder" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">View</a>
+                    <h5 class="text-uppercase lang" data-caption-animate="fadeInRight" data-caption-delay="0" key="inNature">in an untouched part of nature</h5>
+                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span class="lang" key="casaViterIs">Casa Viter is</span><span class="font-weight-bold lang" key="forYou"> For You</span></h2><a class="button button-default-outline button-ujarak buttonBolder lang" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0" key="view">View</a>
                   </div>
                 </div>
               </div>
@@ -119,8 +142,8 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-10 backgroundGray">
-                    <h5 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Beautiful places nearby</h5>
-                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Wide Variety of</span><span class="font-weight-bold"> Amazing Trips</span></h2><a class="button button-default-outline button-ujarak buttonBolder" href="trips.html" data-caption-animate="fadeInLeft" data-caption-delay="0">Explore</a>
+                    <h5 class="text-uppercase lang" data-caption-animate="fadeInRight" data-caption-delay="0" key="beautifulPlacesNearby">Beautiful places nearby</h5>
+                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span class="lang" key="wideVariety">Wide Variety of</span><span class="font-weight-bold lang" key="amazingTrips"> Amazing Trips</span></h2><a class="button button-default-outline button-ujarak buttonBolder lang" href="trips.html" data-caption-animate="fadeInLeft" data-caption-delay="0" key="explore">Explore</a>
                   </div>
                 </div>
               </div>
@@ -139,27 +162,27 @@
                 <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
                   <ul class="list-marked-2 box-categories-list">
                     <li><a href="basementApartment.html"><img src="images/ba/baThumbnail.jpg" alt="" width="368" height="420"/></a>
-                      <h5 class="box-categories-title backgroundGray">Basement Apartment</h5>
+                      <h5 class="box-categories-title backgroundGray lang" key="basementApartment">Ground Floor Apartment</h5>
                     </li>
                   </ul>
                 </div>
                 <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
                   <ul class="list-marked-2 box-categories-list">
                     <li><a href="studioApartment1.html"><img src="images/sa1/sa1Thumbnail.jpg" alt="" width="368" height="420"/></a>
-                      <h5 class="box-categories-title backgroundGray">Studio Apartment 1</h5>
+                      <h5 class="box-categories-title backgroundGray lang" key="sa1">Studio Apartment 1</h5>
                     </li>
                   </ul>
                 </div>
                 <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
                   <ul class="list-marked-2 box-categories-list">
                     <li><a href="loft.html"><img src="images/loft/loftThumbnail.jpg" alt="" width="368" height="420"/></a>
-                      <h5 class="box-categories-title backgroundGray">Loft</h5>
+                      <h5 class="box-categories-title backgroundGray lang" key="loft">Loft</h5>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-          </div><a id="viewAllAps" class="link-classic wow fadeInUp" href="apartments.html">View All Apartments<span></span></a>
+          </div><a id="viewAllAps" class="link-classic wow fadeInUp lang" href="apartments.html" key="viewAllAps">View All Apartments<span></span></a>
           <!-- Owl Carousel-->
         </div>
       </section>
@@ -168,8 +191,8 @@
         <div class="parallax-container" data-parallax-img="images/plaza/8.jpg">
           <div class="parallax-content section-xl section-inset-custom-1 context-dark bg-overlay-2-21">
             <div id="sunrise2times"class="container backgroundGray">
-              <h2 class="heading-2 oh font-weight-normal wow slideInDown"><span class="d-block font-weight-semi-bold">The only place on earth</span><span class="d-block font-weight-light">where the sun rises 2 times</span></h2>
-              <p class="text-width-medium text-spacing-75 wow fadeInLeft" data-wow-delay=".1s">Zaostrog is the only place in the world where the sun rises two times during the same morning in a specific time of year. The sun appears for the first time under the Viter hill, after which it hides behind the sheer rock for twenty minutes, and then a second sunrise follows. This phenomenon is a unique world phenomenon which deserves to be captured with a camera.</p>
+              <h2 class="heading-2 oh font-weight-normal wow slideInDown"><span class="d-block font-weight-semi-bold lang" key="sunrise1">The only place on earth</span><span class="d-block font-weight-light lang" key="sunrise2">where the sun rises 2 times</span></h2>
+              <p class="text-width-medium text-spacing-75 wow fadeInLeft lang" data-wow-delay=".1s" key="sunrise3">Zaostrog is the only place in the world where the sun rises two times during the same morning in a specific time of year. The sun appears for the first time under the Viter hill, after which it hides behind the sheer rock for twenty minutes, and then a second sunrise follows. This phenomenon is a unique world phenomenon which deserves to be captured with a camera.</p>
             </div>
           </div>
         </div>
@@ -178,7 +201,7 @@
       <!-- Hot tours-->
       <section id="toursHP" class="section section-sm bg-default  dbvg">
         <div class="container">
-          <h3 class="oh-desktop"><span class="d-inline-block wow slideInDown">Hot Tours</span></h3>
+          <h3 class="oh-desktop"><span class="d-inline-block wow slideInDown lang" key="hotTrips">Hot Trips</span></h3>
           <div class="row row-sm row-40 row-md-50">
             <div class="col-sm-12 col-md-12 wow fadeInRight">
 
@@ -188,8 +211,8 @@
                   <div class="unit-left"><a class="product-big-figure" href="https://www.google.com/search?q=dubrovnik" target="_blank"><img src="images/izleti/dubrovnik.jpg" alt="" width="600" height="366"/></a></div>
                   <div class="unit-body">
                     <div class="product-big-body">
-                      <h5 class="product-big-title"><a href="https://www.google.com/search?q=dubrovnik" target="_blank">Croatia, Dubrovnik</a></h5>
-                      <p class="product-big-text">Dubrovnik is  one of the most prominent tourist destinations in Croatia and the Mediterranean Sea. In 1979, the city of Dubrovnik joined the UNESCO list of World Heritage sites.</p><a class="button button-black-outline button-ujarak" href="https://www.google.com/search?q=dubrovnik" target="_blank">Read More</a>
+                      <h5 class="product-big-title"><a class="lang" href="https://www.google.com/search?q=dubrovnik" target="_blank" key="dubrovnik1">Croatia, Dubrovnik</a></h5>
+                      <p class="product-big-text lang" key="dubrovnik2">Dubrovnik is  one of the most prominent tourist destinations in Croatia and the Mediterranean Sea. In 1979, the city of Dubrovnik joined the UNESCO list of World Heritage sites.</p><a class="button button-black-outline button-ujarak lang" href="https://www.google.com/search?q=dubrovnik" target="_blank" key="readMore">Read More</a>
                       <div class="product-big-price-wrap"><span class="product-big-price">110 km</span></div>
                     </div>
                   </div>
@@ -204,8 +227,8 @@
                   <div class="unit-left"><a class="product-big-figure" href="https://www.google.com/search?q=medjugorje" target="_blank"><img src="images/izleti/medjugorje.jpg" alt="" width="600" height="366"/></a></div>
                   <div class="unit-body">
                     <div class="product-big-body">
-                      <h5 class="product-big-title"><a href="https://www.google.com/search?q=medjugorje" target="_blank">Bosnia and Herzegovina, Medjugorje</a></h5>
-                      <p class="product-big-text">Since 1981, Medjugorje has become a world famous pilgrimage town due to Our Lady of Medjugorje, an alleged series of apparitions of the Virgin Mary to six local children that are still hapenning to this day.</p><a class="button button-black-outline button-ujarak" href="https://www.google.com/search?q=medjugorje" target="_blank">Read More</a>
+                      <h5 class="product-big-title"><a class="lang" href="https://www.google.com/search?q=medjugorje" target="_blank" key="medjugorje1">Bosnia and Herzegovina, Medjugorje</a></h5>
+                      <p class="product-big-text lang" key="medjugorje2">Since 1981, Medjugorje has become a world famous pilgrimage town due to Our Lady of Medjugorje, an alleged series of apparitions of the Virgin Mary to six local children that are still hapenning to this day.</p><a class="button button-black-outline button-ujarak lang" href="https://www.google.com/search?q=medjugorje" target="_blank" key="readMore">Read More</a>
                       <div class="product-big-price-wrap"><span class="product-big-price">70 km</span></div>
                     </div>
                   </div>
@@ -213,7 +236,7 @@
               </article>
             </div>
           </div>
-          <a href="trips.html"><div id="viewAllTrips" class="button button-primary button-pipaluk button-circle">View All</div></a>
+          <a href="trips.html"><div id="viewAllTrips" class="button button-primary button-pipaluk button-circle lang" key="viewAll">View All</div></a>
         </div>
       </section>
 
@@ -222,27 +245,27 @@
         <div class="container">
           <div class="row row-50">
             <div class="col-lg-6 section-map-small">
-              <div class="google-map-container" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFBB00&quot;},{&quot;saturation&quot;:43.400000000000006},{&quot;lightness&quot;:37.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFC200&quot;},{&quot;saturation&quot;:-61.8},{&quot;lightness&quot;:45.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:51.19999999999999},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:52},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#0078FF&quot;},{&quot;saturation&quot;:-13.200000000000003},{&quot;lightness&quot;:2.4000000000000057},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#00FF6A&quot;},{&quot;saturation&quot;:-1.0989010989011234},{&quot;lightness&quot;:11.200000000000017},{&quot;gamma&quot;:1}]}]">
+              <div class="google-map-container" data-key="AIzaSyAqbS9-l3RQUf3Ok6bokRfoF79ICjWzUKI" data-center="Put Svete Barbare 25, 21334, Zaostrog, Croatia" data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFBB00&quot;},{&quot;saturation&quot;:43.400000000000006},{&quot;lightness&quot;:37.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFC200&quot;},{&quot;saturation&quot;:-61.8},{&quot;lightness&quot;:45.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:51.19999999999999},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:52},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#0078FF&quot;},{&quot;saturation&quot;:-13.200000000000003},{&quot;lightness&quot;:2.4000000000000057},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#00FF6A&quot;},{&quot;saturation&quot;:-1.0989010989011234},{&quot;lightness&quot;:11.200000000000017},{&quot;gamma&quot;:1}]}]">
                 <div class="google-map"></div>
                 <ul class="google-map-markers">
-                  <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker.png"></li>
+                  <li data-location="Put Svete Barbare 25, 21334, Zaostrog, Croatia" data-description="Casa-Viter" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker.png"></li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-6">
-              <h4 class="text-spacing-50">Get in Touch</h4>
+              <h4 class="text-spacing-50 lang" key="getInTouch">Get in Touch</h4>
               <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
                 <div class="row row-14 gutters-14">
                   <div class="col-sm-6">
                     <div class="form-wrap">
                       <input class="form-input" id="contact-first-name" type="text" name="name" data-constraints="@Required">
-                      <label class="form-label" for="contact-first-name">First Name</label>
+                      <label class="form-label lang" key="firstName" for="contact-first-name">First Name</label>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-wrap">
                       <input class="form-input" id="contact-last-name" type="text" name="name" data-constraints="@Required">
-                      <label class="form-label" for="contact-last-name">Last Name</label>
+                      <label class="form-label lang" key="lastName" for="contact-last-name">Last Name</label>
                     </div>
                   </div>
                   <div class="col-12">
@@ -253,12 +276,12 @@
                   </div>
                   <div class="col-12">
                     <div class="form-wrap">
-                      <label class="form-label" for="contact-message">Message</label>
+                      <label class="form-label lang" key="message" for="contact-message">Message</label>
                       <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
                     </div>
                   </div>
                 </div>
-                <button class="button button-primary button-pipaluk" type="submit">Send Message</button>
+                <button class="button button-primary button-pipaluk lang" type="submit" key="sendMessage">Send Message</button>
               </form>
             </div>
           </div>
@@ -273,7 +296,7 @@
               <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInRight" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+                    <h6 class="text-spacing-100 text-uppercase lang" key="contactUs">Contact us</h6>
                     <ul class="footer-contacts d-inline-block d-sm-block">
                       <li>
                         <div class="unit">
@@ -300,24 +323,24 @@
               <div id="divFuter" class="col-sm-6 col-md-5 col-lg-3 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInDown" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Dear Guests</h6>
-                    <p>Our family wishes you a warm welcome and a pleasant stay in our apartments!  Come to Zaostrog, a small place on the Adriatic coast where everything is close at hand and enjoy the sights and sounds of the Adriatic sea and the nature that surrounds it.</p>
+                    <h6 class="text-spacing-100 text-uppercase lang" key="dearGuests">Dear Guests</h6>
+                    <p class="lang" key="footerText">Our family wishes you a warm welcome and a pleasant stay in our apartments! Come to Zaostrog, a small place on the Adriatic coast where everything is close at hand and enjoy the sights and sounds of the Adriatic sea and the nature that surrounds it.</p>
                   </div>
                 </div>
               </div>
               <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInLeft" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Quick links</h6>
+                    <h6 class="text-spacing-100 text-uppercase lang" key="fastLinks">Quick links</h6>
                     <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
-                      <li><a href="about.html">About us</a></li>
-                      <li><a href="apartments.html">Apartments</a></li>
-                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="about.html" class="lang" key="aboutUs">About us</a></li>
+                      <li><a href="apartments.html" class="lang" key="apartments">Apartments</a></li>
+                      <li><a href="gallery.html" class="lang" key="gallery">Gallery</a></li>
                       <li><a href="zaostrog.html">Zaostrog</a></li>
-                      <li><a href="trips.html">Trips</a></li>
-                      <li><a href="whereAreWe.html">Where Are We</a></li>
+                      <li><a href="trips.html" class="lang" key="trips">Trips</a></li>
+                      <li><a href="whereAreWe.html" class="lang" key="whereAreWe">Where Are We</a></li>
                     </ul>
-                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak" href="contact.html">Get in touch</a></div>
+                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak lang" href="contact.html" key="getInTouch">Get in touch</a></div>
                   </div>
                 </div>
               </div>
@@ -329,7 +352,7 @@
             <div class="row justfy-content-xl-space-berween row-10 align-items-md-center2">
               <div class="col-sm-6 col-md-4 order-sm-first">
                 <!-- Rights-->
-                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Casa-Viter</span>. All rights reserved<span>.</span>
+                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Casa-Viter</span>. <span class="lang" key="allRights">All rights reserved</span><span>.</span>
                 </p>
               </div>
             </div>
@@ -342,5 +365,6 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/german.js"></script>
   </body>
 </html>

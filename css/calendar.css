@@ -1,0 +1,23 @@
+#calendar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* width: 100%; */
+    text-align:center;
+}
+#calendar .event a, #calendar_wrapper .event a {
+    background-color: red !important;
+    background-image: none !important;
+    color: black !important;
+}
+#calendar, #calendar_wrapper {
+    /* width: 100%; */
+    font-family: Cambria;
+}
+#calendar .success, #calendar_wrapper .success {
+    color: green;
+    font-size: 16px;
+}
+#calendar .error, #calendar_wrapper .error {
+    color: red;
+    font-size: 16px;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Basement Apartment</title>
+    <title class="lang" key="basementApartment">Basement Apartment</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +12,20 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calendar.css" id="main-styles-link">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
     <![endif]-->
+    <style>
+      #calendar {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align:center;
+        display: inline-block;
+      }
+   </style>
   </head>
   <body>
     <div class="preloader">
@@ -44,41 +54,64 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="rd-navbar-main-outer">
               <div class="rd-navbar-main">
                 <div class="rd-navbar-nav-wrap">
+                  <div id="logoNevbar" class="rd-navbar-brand"><a class="brand logoNavbar" href="index.html"><img src="images/logoViter.png" alt="" width="188" height="19"/></a></div>
                   <ul class="list-inline list-inline-md rd-navbar-corporate-list-social">
                     <li><a class="icon fa fa-facebook" href="#"></a></li>
-                    <li><a class="icon fa fa-twitter" href="#"></a></li>
-                    <li><a class="icon fa fa-google-plus" href="#"></a></li>
                     <li><a class="icon fa fa-instagram" href="#"></a></li>
+
+                                  <li class="rd-nav-item zastava"  id="hr">
+                                              <a class="navbar-brand zastava" href="#">
+                                                  <div class="logo-image">
+                                                      <img src="images/hr.png" class="img-fluid">
+                                                  </div>
+                                              </a>
+                                   </li>
+
+                                   <li class="rd-nav-item zastava"  id="de">
+                                              <a class="navbar-brand zastava translate" href="#">
+                                                  <div class="logo-image">
+                                                      <img src="images/de.png" class="img-fluid de">
+                                                  </div>
+                                              </a>
+                                    </li>
+
+                                     <li class="rd-nav-item zastava"  id="en">
+                                              <a class="navbar-brand zastava translate" href="#">
+                                                  <div class="logo-image">
+                                                      <img src="images/en.png" class="img-fluid de">
+                                                  </div>
+                                              </a>
+                                      </li>
                   </ul>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="home" href="index.html">Home</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About Us</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="about" href="about.html">About Us</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="apartments.html">Apartments</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="apartments" href="apartments.html">Apartments</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="studioApartment1.html">Studio Apartment 1</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="studioApartment2.html">Studio Apartment 2</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="studioApartment3.html">Studio Apartment 3</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="loft.html">Loft</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="basementApartment.html">Basement Apartment</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="sa1" href="studioApartment1.html">Studio Apartment 1</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="sa2" href="studioApartment2.html">Studio Apartment 2</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="sa3" href="studioApartment3.html">Studio Apartment 3</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="loft" href="loft.html">Loft</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="basementApartment" href="basementApartment.html">Ground Floor Apartment</a></li>
                       </ul>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="gallery.html">Gallery</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="gallery" href="gallery.html">Gallery</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="zaostrog.html">Zaostrog</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="trips.html">Trips</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="trips" href="trips.html">Trips</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="contact" href="contact.html">Contact</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="whereAreWe.html">Where Are We</a>                     
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="whereAreWe" href="whereAreWe.html">Where Are We</a>                     
                     </li>
                   </ul>
                 </div>
@@ -91,11 +124,11 @@
       <section class="breadcrumbs-custom-inset">
         <div class="breadcrumbs-custom context-dark bg-overlay-48">
           <div class="container">
-            <h2 class="breadcrumbs-custom-title">Basement Apartment</h2>
+            <h2 class="breadcrumbs-custom-title lang" key="basementApartment">Basement Apartment</h2>
             <ul class="breadcrumbs-custom-path">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="apartments.html">Apartments</a></li>
-              <li class="active">Basement Apartment</li>
+              <li><a href="index.html" class="lang" key="home">Home</a></li>
+              <li><a href="apartments.html" class="lang" key="apartments">Apartments</a></li>
+              <li class="active lang" key="basementApartment">Basement Apartment</li>
             </ul>
           </div>
           <div class="box-position" style="background-image: url(images/plaza/2.jpg);"></div>
@@ -186,9 +219,9 @@
         <div class="backgroundColor">
           <div class="container">
                           <br><br>
-            <h6 class="lang kurijernju">Number of persons: 2+2</h6>
+            <h6 class="kurijernju"><span class="lang" key="persons">Number of persons</span>: 2+2</h6>
             <br>
-            <p class="lang" align="left">It features/has:</p>
+            <p class="lang" align="left" key="itFeatures">It features/has:</p>
             <br>
             <div class="tab-pane" align="center">
             
@@ -196,12 +229,12 @@
                         <li>SAT TV</li>                     
                         <li>LCD TV</li>
                         <li class="lang" key="kitchen">Kitchen</li>
-                        <li class="lang" key="1bathShowerToilet">Bathroom</li>
+                        <li class="lang" key="bathroom">Bathroom</li>
                         <li class="lang" key="garden">Garden</li>
-                        <li class="lang" key="terrase">Terrase</li>
+                        <li class="lang" key="terrasse">Terrase</li>
                         <li class="lang" key="bbq">Outdoors barbecue</li>
                         <li class="lang" key="parking">Parking</li>
-                        <li class="lang" key="wlanInternet">WLAN internet</li>
+                        <li class="lang" key="wifi">WLAN internet</li>
                         <li class="lang" key="ac">Air condition</li>
                         <br><br>
                       </ul>
@@ -209,6 +242,13 @@
             </div>
           </div>
       </section>
+      <!---------------------------------------------------------------------->
+
+          <div class="container" style="text-align: center;">
+            <div id="calendar" data-id="sa1"></div>
+          </div>
+
+      <!---------------------------------------------------------------------->
       <!-- Page Footer-->
       <footer class="section footer-corporate context-dark">
         <div class="footer-corporate-inset">
@@ -217,7 +257,7 @@
               <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInRight" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+                    <h6 class="text-spacing-100 text-uppercase lang" key="contactUs">Contact us</h6>
                     <ul class="footer-contacts d-inline-block d-sm-block">
                       <li>
                         <div class="unit">
@@ -244,24 +284,24 @@
               <div id="divFuter" class="col-sm-6 col-md-5 col-lg-3 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInDown" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Dear Guests</h6>
-                    <p>Our family wishes you a warm welcome and a pleasant stay in our apartments!  Come to Zaostrog, a small place on the Adriatic coast where everything is close at hand and enjoy the sights and sounds of the Adriatic sea and the nature that surrounds it.</p>
+                    <h6 class="text-spacing-100 text-uppercase lang" key="dearGuests">Dear Guests</h6>
+                    <p class="lang" key="footerText">Our family wishes you a warm welcome and a pleasant stay in our apartments! Come to Zaostrog, a small place on the Adriatic coast where everything is close at hand and enjoy the sights and sounds of the Adriatic sea and the nature that surrounds it.</p>
                   </div>
                 </div>
               </div>
               <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInLeft" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Quick links</h6>
+                    <h6 class="text-spacing-100 text-uppercase lang" key="fastLinks">Quick links</h6>
                     <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
-                      <li><a href="about.html">About us</a></li>
-                      <li><a href="apartments.html">Apartments</a></li>
-                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="about.html" class="lang" key="aboutUs">About us</a></li>
+                      <li><a href="apartments.html" class="lang" key="apartments">Apartments</a></li>
+                      <li><a href="gallery.html" class="lang" key="gallery">Gallery</a></li>
                       <li><a href="zaostrog.html">Zaostrog</a></li>
-                      <li><a href="trips.html">Trips</a></li>
-                      <li><a href="whereAreWe.html">Where Are We</a></li>
+                      <li><a href="trips.html" class="lang" key="trips">Trips</a></li>
+                      <li><a href="whereAreWe.html" class="lang" key="whereAreWe">Where Are We</a></li>
                     </ul>
-                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak" href="contact.html">Get in touch</a></div>
+                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak lang" href="contact.html" key="getInTouch">Get in touch</a></div>
                   </div>
                 </div>
               </div>
@@ -273,7 +313,7 @@
             <div class="row justfy-content-xl-space-berween row-10 align-items-md-center2">
               <div class="col-sm-6 col-md-4 order-sm-first">
                 <!-- Rights-->
-                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Casa-Viter</span>. All rights reserved<span>.</span>
+                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Casa-Viter</span>. <span class="lang" key="allRights">All rights reserved</span><span>.</span>
                 </p>
               </div>
             </div>
@@ -286,5 +326,8 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/german.js"></script>
   </body>
 </html>

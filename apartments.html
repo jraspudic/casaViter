@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Apartments</title>
+    <title class="lang" key="apartments">Apartments</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,41 +44,64 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="rd-navbar-main-outer">
               <div class="rd-navbar-main">
                 <div class="rd-navbar-nav-wrap">
+                  <div id="logoNevbar" class="rd-navbar-brand"><a class="brand logoNavbar" href="index.html"><img src="images/logoViter.png" alt="" width="188" height="19"/></a></div>
                   <ul class="list-inline list-inline-md rd-navbar-corporate-list-social">
                     <li><a class="icon fa fa-facebook" href="#"></a></li>
-                    <li><a class="icon fa fa-twitter" href="#"></a></li>
-                    <li><a class="icon fa fa-google-plus" href="#"></a></li>
                     <li><a class="icon fa fa-instagram" href="#"></a></li>
+
+                                  <li class="rd-nav-item zastava"  id="hr">
+                                              <a class="navbar-brand zastava" href="#">
+                                                  <div class="logo-image">
+                                                      <img src="images/hr.png" class="img-fluid">
+                                                  </div>
+                                              </a>
+                                   </li>
+
+                                   <li class="rd-nav-item zastava"  id="de">
+                                              <a class="navbar-brand zastava translate" href="#">
+                                                  <div class="logo-image">
+                                                      <img src="images/de.png" class="img-fluid de">
+                                                  </div>
+                                              </a>
+                                    </li>
+
+                                     <li class="rd-nav-item zastava"  id="en">
+                                              <a class="navbar-brand zastava translate" href="#">
+                                                  <div class="logo-image">
+                                                      <img src="images/en.png" class="img-fluid de">
+                                                  </div>
+                                              </a>
+                                      </li>
                   </ul>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="home" href="index.html">Home</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About Us</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="about" href="about.html">About Us</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="apartments.html">Apartments</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="apartments" href="apartments.html">Apartments</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="studioApartment1.html">Studio Apartment 1</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="studioApartment2.html">Studio Apartment 2</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="studioApartment3.html">Studio Apartment 3</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="loft.html">Loft</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="basementApartment.html">Basement Apartment</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="sa1" href="studioApartment1.html">Studio Apartment 1</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="sa2" href="studioApartment2.html">Studio Apartment 2</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="sa3" href="studioApartment3.html">Studio Apartment 3</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="loft" href="loft.html">Loft</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link lang" key="basementApartment" href="basementApartment.html">Ground Floor Apartment</a></li>
                       </ul>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="gallery.html">Gallery</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="gallery" href="gallery.html">Gallery</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="zaostrog.html">Zaostrog</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="trips.html">Trips</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="trips" href="trips.html">Trips</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="contact" href="contact.html">Contact</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="whereAreWe.html">Where Are We</a>                     
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="whereAreWe" href="whereAreWe.html">Where Are We</a>                     
                     </li>
                   </ul>
                 </div>
@@ -91,10 +114,10 @@
       <section class="breadcrumbs-custom-inset">
         <div class="breadcrumbs-custom context-dark bg-overlay-46">
           <div class="container">
-            <h2 class="breadcrumbs-custom-title">Our Apartments</h2>
+            <h2 class="breadcrumbs-custom-title lang" key="ourApartments">Our Apartments</h2>
             <ul class="breadcrumbs-custom-path">
-              <li><a href="index.html">Home</a></li>
-              <li class="active">Apartments</li>
+              <li><a href="index.html" class="lang" key="home">Home</a></li>
+              <li class="active lang" key="apartments">Apartments</li>
             </ul>
           </div>
           <div class="box-position" style="background-image: url(images/plaza/2.jpg);"></div>
@@ -110,9 +133,9 @@
                   <div class="unit-left"><a class="product-big-figure" href="studioApartment1.html"><img src="images/sa1/sa1T.jpg" alt="" width="600" height="366"/></a></div>
                   <div class="unit-body">
                     <div class="product-big-body">
-                      <h5 class="product-big-title"><a href="studioApartment1.html">Studio Apartment 1</a></h5>
-                      <p class="product-big-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><a class="button button-black-outline button-ujarak" href="studioApartment1.html">View</a>
-                      <div class="product-big-price-wrap"><span class="product-big-price">2 persons</span></div>
+                      <h5 class="product-big-title"><a href="studioApartment1.html" class="lang" key="sa1">Studio Apartment 1</a></h5>
+                      <p class="product-big-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><a class="button button-black-outline button-ujarak lang" key="view" href="studioApartment1.html">View</a>
+                      <div class="product-big-price-wrap"><span class="product-big-price">2 <span class="lang" key="persons">persons</span></span></div>
                     </div>
                   </div>
                 </div>
@@ -127,9 +150,9 @@
                   <div class="unit-left"><a class="product-big-figure" href="studioApartment2.html"><img src="images/sa2/sa2T.jpg" alt="" width="600" height="366"/></a></div>
                   <div class="unit-body">
                     <div class="product-big-body">
-                      <h5 class="product-big-title"><a href="studioApartment2.html">Studio Apartment 2</a></h5>
-                      <p class="product-big-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><a class="button button-black-outline button-ujarak" href="studioApartment2.html">View</a>
-                      <div class="product-big-price-wrap"><span class="product-big-price">2 persons</span></div>
+                      <h5 class="product-big-title"><a href="studioApartment2.html" class="lang" key="sa2">Studio Apartment 2</a></h5>
+                      <p class="product-big-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><a class="button button-black-outline button-ujarak lang" key="view" href="studioApartment2.html">View</a>
+                      <div class="product-big-price-wrap"><span class="product-big-price">2 <span class="lang" key="persons">persons</span></span></div>
                     </div>
                   </div>
                 </div>
@@ -144,9 +167,9 @@
                   <div class="unit-left"><a class="product-big-figure" href="single-tour.html"><img src="images/sa3/sa3T.jpg" alt="" width="600" height="366"/></a></div>
                   <div class="unit-body">
                     <div class="product-big-body">
-                      <h5 class="product-big-title"><a href="single-tour.html">Studio Apartment 3</a></h5>
-                      <p class="product-big-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><a class="button button-black-outline button-ujarak" href="https://www.google.com/search?q=dubrovnik">View</a>
-                      <div class="product-big-price-wrap"><span class="product-big-price">2 persons</span></div>
+                      <h5 class="product-big-title"><a href="single-tour.html" class="lang" key="sa3">Studio Apartment 3</a></h5>
+                      <p class="product-big-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><a class="button button-black-outline button-ujarak lang" href="https://www.google.com/search?q=dubrovnik" key="view">View</a>
+                      <div class="product-big-price-wrap"><span class="product-big-price">2 <span class="lang" key="persons">persons</span></span></div>
                     </div>
                   </div>
                 </div>
@@ -161,9 +184,9 @@
                   <div class="unit-left"><a class="product-big-figure" href="loft.html.html"><img src="images/loft/loftT.jpg" alt="" width="600" height="366"/></a></div>
                   <div class="unit-body">
                     <div class="product-big-body">
-                      <h5 class="product-big-title"><a href="loft.html">Loft</a></h5>
-                      <p class="product-big-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><a class="button button-black-outline button-ujarak" href="loft.html">View</a>
-                      <div class="product-big-price-wrap"><span class="product-big-price">2+3 persons</span></div>
+                      <h5 class="product-big-title"><a href="loft.html" class="lang" key="loft">Loft</a></h5>
+                      <p class="product-big-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><a class="button button-black-outline button-ujarak lang" key="view" href="loft.html">View</a>
+                      <div class="product-big-price-wrap"><span class="product-big-price">2+3 <span class="lang" key="persons">persons</span></span></div>
                     </div>
                   </div>
                 </div>
@@ -178,9 +201,9 @@
                   <div class="unit-left"><a class="product-big-figure" href="basementApartment.html"><img src="images/ba/baT.jpg" alt="" width="600" height="366"/></a></div>
                   <div class="unit-body">
                     <div class="product-big-body">
-                      <h5 class="product-big-title"><a href="basementApartment.html">Basement Apartment</a></h5>
-                      <p class="product-big-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><a class="button button-black-outline button-ujarak" href="basementApartment.html">View</a>
-                      <div class="product-big-price-wrap"><span class="product-big-price">2+2 persons</span></div>
+                      <h5 class="product-big-title"><a href="basementApartment.html" class="lang" key="basementApartment">Ground Floor Apartment</a></h5>
+                      <p class="product-big-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><a class="button button-black-outline button-ujarak lang" key="view" href="basementApartment.html">View</a>
+                      <div class="product-big-price-wrap"><span class="product-big-price">2+2 <span class="lang" key="persons">persons</span></span></div>
                     </div>
                   </div>
                 </div>
@@ -197,7 +220,7 @@
               <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInRight" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+                    <h6 class="text-spacing-100 text-uppercase lang" key="contactUs">Contact us</h6>
                     <ul class="footer-contacts d-inline-block d-sm-block">
                       <li>
                         <div class="unit">
@@ -224,24 +247,24 @@
               <div id="divFuter" class="col-sm-6 col-md-5 col-lg-3 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInDown" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Dear Guests</h6>
-                    <p>Our family wishes you a warm welcome and a pleasant stay in our apartments!  Come to Zaostrog, a small place on the Adriatic coast where everything is close at hand and enjoy the sights and sounds of the Adriatic sea and the nature that surrounds it.</p>
+                    <h6 class="text-spacing-100 text-uppercase lang" key="dearGuests">Dear Guests</h6>
+                    <p class="lang" key="footerText">Our family wishes you a warm welcome and a pleasant stay in our apartments! Come to Zaostrog, a small place on the Adriatic coast where everything is close at hand and enjoy the sights and sounds of the Adriatic sea and the nature that surrounds it.</p>
                   </div>
                 </div>
               </div>
               <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInLeft" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Quick links</h6>
+                    <h6 class="text-spacing-100 text-uppercase lang" key="fastLinks">Quick links</h6>
                     <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
-                      <li><a href="about.html">About us</a></li>
-                      <li><a href="apartments.html">Apartments</a></li>
-                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="about.html" class="lang" key="aboutUs">About us</a></li>
+                      <li><a href="apartments.html" class="lang" key="apartments">Apartments</a></li>
+                      <li><a href="gallery.html" class="lang" key="gallery">Gallery</a></li>
                       <li><a href="zaostrog.html">Zaostrog</a></li>
-                      <li><a href="trips.html">Trips</a></li>
-                      <li><a href="whereAreWe.html">Where Are We</a></li>
+                      <li><a href="trips.html" class="lang" key="trips">Trips</a></li>
+                      <li><a href="whereAreWe.html" class="lang" key="whereAreWe">Where Are We</a></li>
                     </ul>
-                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak" href="contact.html">Get in touch</a></div>
+                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak lang" href="contact.html" key="getInTouch">Get in touch</a></div>
                   </div>
                 </div>
               </div>
@@ -253,7 +276,7 @@
             <div class="row justfy-content-xl-space-berween row-10 align-items-md-center2">
               <div class="col-sm-6 col-md-4 order-sm-first">
                 <!-- Rights-->
-                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Casa-Viter</span>. All rights reserved<span>.</span>
+                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Casa-Viter</span>. <span class="lang" key="allRights">All rights reserved</span><span>.</span>
                 </p>
               </div>
             </div>
@@ -266,5 +289,6 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/german.js"></script>
   </body>
 </html>

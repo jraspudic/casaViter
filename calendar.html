@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title></title>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="css/calendar.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/calendar.js"></script>
+</head>
+<body>
+    <div id="login" >
+        <input type="text" name="username" id="username" placeholder="Korisničko ime" />
+        <br />
+        <br />
+        <input type="password" name="password" id="password" placeholder="Lozinka"/>
+        <br />
+        <br />
+        <button type="button" name="loginButton" id="loginButton" onclick="Login();">Prijava</button>
+    </div>
+    <div id="calendar_wrapper" style="display:none;">
+        <h1>Kalendar zauzetosti apartmana</h1>
+        <select id="apartment" onchange="onApartmentSelected()">
+            <option value="201">Studio apartment 1</option>
+            <option value="202">Studio apartment 2</option>
+            <option value="203">Studio apartment 3</option>
+            <option value="204">Loft</option>
+            <option value="205">Basement apartment</option>
+        </select>
+        <div id="calendar"></div>
+        <button onclick="Save()">Spremi</button>
+        <br />
+        <br />
+        <div class="success"></div>
+        <div class="error"></div>
+    </div>
+</body>
+</html>
