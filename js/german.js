@@ -4,15 +4,15 @@ $(function() {
   		var en = document.getElementById("en");
     if(document.cookie.includes("languageCasaViter=de")){
     	de.style.display = "none";
-    	hr.style.display = "inline";
-    	en.style.display = "inline";
+    	hr.style.display = "inline-block";
+    	en.style.display = "inline-block";
 
     	translateDE();
     }
     else if(document.cookie.includes("languageCasaViter=hr")){
-    	de.style.display = "inline";
+    	de.style.display = "inline-block";
     	hr.style.display = "none";
-    	en.style.display = "inline";
+    	en.style.display = "inline-block";
 
     	translateHR();
     }
@@ -111,6 +111,8 @@ var deLang = {
 
 		//priceList
 		'date' : 'Datum',
+		'aboutUsText' : 'In einer ruhigen Seitenstraße erwarten Sie drei neue, modern eingerichtete Studio Apartments und eine Ferienwohnung. Alle Apartments sind jeweils mit Sat-TV, Flachbildschirm, Balkon mit Meerblick (außer in Apartment 3), Küche und geräumigem Badezimmer ausgestattet. Außerdem gehören Terrassen, Garten, Außengrill und Parkplatz dazu. Die Entfernung zum Strand / Ortszentrum / Einkaufsläden / Restaurants beträgt ca. 700 m bzw. 10 – 15 Min. zu Fuß. Wir werden unser Bestes tun und dafür sorgen, dass es Ihnen während Ihres Aufenthaltes an nichts fehlt; auch für die kulturellen Bedürfnisse und Ausflüge kann gesorgt werden. Wir sind uns sicher, dass Ihnen diese touristische Oase sehr gute Erholung und Unterhaltung, aber vor allem auch eine Menge schöner Erinnerungen bieten wird, die Sie mitnehmen werden und die Sie dazu bringen werden, uns wieder zu besuchen.',
+		'zaostrogText' : 'Zaostrog ist ein kleiner, typisch dalmatinischer Ort mit ca. 300 Einwohnern in Kroatien. Hier finden Sie weiße Kieselstrände mit einigen wunderschönen Badebuchten, gute Restaurants, Straßencafés, Supermärkte, Apotheke, Post, Bäckerei, etc.',
 		}
 
 var hrLang = {
@@ -206,6 +208,8 @@ var hrLang = {
 
 		//priceList
 		'date' : 'Datum',
+		'aboutUsText' : 'U netaknutom dijelu prirode, na raspolaganju su Vam tri studio-apartmana, te jedan veliki jednoetažni apartman. Tri apartmana imaju predivan pogled na more kao i u prirodu, šumu i planine. Opremljeni su klimom, W-LAN internetom, SAT-TV, LCD-televizorom, kuhinjom i prostranom kupaonicom. Na korištenju su Vam: vrt, velika terasa s vanjskom roštiljem i parkiralište. Udaljenost od pješčane plaže, restorana, trgovina, pošte, itd. je oko 700 m. (10 – 15 minuta pješice). Trudit ćemo se da Vam boravak i odmor u našoj sredini bude zaista i vrijeme opuštenosti, mira i zadovoljstva. Sigurni smo da Vam ovaj dio turističkog raja pruža odličan odmor, zabavu i rekreaciju iz kojega ćete ponijeti bezbroj lijepih uspomena, kojih ćete se rado sjećati. Radujemo se Vašem dolasku! Želimo Vam ugodan boravak!',
+		'zaostrogText' : 'Zaostrog je malo, tipično dalmatinsko mjesto u Hrvatskoj s otprilike 300 stanovnika. Ovdje možete naći bijele šljunčane plaže u lijepim morskim uvalama, dobre restorane, ulične kafiće, supermarkete, ljekarnu, poštu, pekaru, itd.',
 		}
 
 	
@@ -245,11 +249,11 @@ $("#contactForm").submit(function( event ) {
   contactForm.style.display = "none";
   formSent.style.display = "block";
   var x = $( this ).serializeArray();
-  var subject = x[2].value;
-  var emailBody = "Ime: " + x[0].value + "\nPrezime: " + x[1].value + "\nE-mail: " + x[2].value + "\nPredmet: " + x[3].value + "\n\n" + x[4].value;
+  var subject = 'contactWebPage';
+  var emailBody = "Ime: " + x[0].value + "\nPrezime: " + x[1].value + "\nE-mail: " + x[2].value + "\n\n" + x[3].value;
 $.ajax({
     type: "POST",
-    url: "https://med-irishcentre.com/webservice/datasource.asmx/spiStrandhausDalmatienEmailSend",
+    url: "https://med-irishcentre.com/webservice/datasource.asmx/spiCasaViterEmailSend",
     data: "{subject:'" + subject + "', body:'" + emailBody +"', mailto: 'jurica.raspudic@gmail.com'}",
     contentType: "application/json; charset=utf-8",
     dataType: "json",

@@ -167,9 +167,9 @@ function calRefresh() {
     }
 }
 $(document).ready(function () {
-    if (document.cookie.includes("languageStrandhaus=de"))
+    if (document.cookie.includes("languageCasaViter=de"))
         $.datepicker.setDefaults($.datepicker.regional.de);
-    else if (document.cookie.includes("languageStrandhaus=hr"))
+    else if (document.cookie.includes("languageCasaViter=hr"))
         $.datepicker.setDefaults($.datepicker.regional.hr);
     else
         $.datepicker.setDefaults($.datepicker.regional.en);
